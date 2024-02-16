@@ -1,11 +1,13 @@
-package com.test;
+package com.store;
 
 import jakarta.validation.Valid;
 import org.jboss.resteasy.annotations.Form;
-import com.test.form.FormRequest;
-import com.test.service.FruitFactory;
-import com.test.service.FruitService;
-import com.test.service.FruitType;
+
+import com.store.form.FormRequest;
+import com.store.service.FruitFactory;
+import com.store.service.FruitService;
+import com.store.service.FruitType;
+
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;

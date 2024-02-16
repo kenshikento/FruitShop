@@ -1,4 +1,4 @@
-package com.test.form;
+package com.store.form;
 
 import jakarta.ws.rs.FormParam;
 

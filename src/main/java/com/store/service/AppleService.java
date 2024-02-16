@@ -1,4 +1,4 @@
-package com.test.service;
+package com.store.service;
 
 
 public class AppleService implements FruitService{
