@@ -15,10 +15,8 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.QueryParam;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-
-
-@XmlRootElement(name = "user-management")
-@Path("/user-management")
+@XmlRootElement(name = "movies")
+@Path("/movies")
 public class ShopService {
 	
 	private final FruitService apple; 
@@ -45,6 +43,15 @@ public class ShopService {
   public String getServiceTestInfo(
 		  @Valid @QueryParam("test") String test
 		  ) {
+	  System.out.println("-----"  + this.strawberry);
+	  
+	  System.out.println("-----"  + this.apple);
+	  return this.apple.getEndPoint();
+  }
+  
+  @GET
+  @Path("/test")
+  public String test() {
 	  System.out.println("-----"  + this.strawberry);
 	  
 	  System.out.println("-----"  + this.apple);
