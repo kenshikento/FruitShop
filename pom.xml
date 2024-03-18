@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>net.javaguides.maven_web_project</groupId>
-  <artifactId>MavenWebApp</artifactId>
-  <packaging>war</packaging>
+  <groupId>fruitshop</groupId>
+  <artifactId>FruitShop</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>Fruit Shop</name>
   <url>http://maven.apache.org</url>
@@ -76,7 +76,23 @@
     <artifactId>resteasy-cdi</artifactId>
     <version>6.2.7.Final</version>
 </dependency>
+   
+  
+<dependency>
+    <groupId>org.eclipse.microprofile.config</groupId>
+    <artifactId>microprofile-config-api</artifactId>
+    <version>3.1</version>
+</dependency>
 
+<dependency>
+    <groupId>io.smallrye.config</groupId>
+    <artifactId>smallrye-config</artifactId>
+    <version>3.6.1</version>
+    <scope>provided</scope>
+</dependency>
+
+   
+            
    
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -106,14 +122,15 @@
         <artifactId>el-impl</artifactId>
         <version>2.2</version>
     </dependency>
+    
     <dependency>
-    	<groupId>resteasy-examples</groupId>
-    	<artifactId>resteasy-examples</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-servlet-initializer</artifactId>
+        <version>3.0.9.Final</version>
     </dependency>
   </dependencies>
   <build>
-    <finalName>MavenWebApp</finalName>
+    <finalName>FruitShop</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

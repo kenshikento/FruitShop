@@ -8,7 +8,7 @@ public class FruitFactory  {
 		switch(type) {
 	    case STRAWBERRY:
 	        return new Fruit(new StrawberryService());
-	    case APPLES:
+	    case APPLE:
 	        return new Fruit(new AppleService());
 	    default:
 	        throw new IllegalArgumentException("Unknown Service ");
